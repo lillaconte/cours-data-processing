@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use these course materials, please cite them as below."
+ 
+title: "Data scraping and (pre)processing course"
+type: software
+ 
+authors:
+  - family-names: Jolivet
+    given-names: Vincent
+ 
+contributors:
+  - family-names: Conte
+    given-names: Lilla
+ 
+  - family-names: Terriel
+    given-names: Lucas
+ 
+  - family-names: Popineau
+    given-names: Maxime
+ 
+date-released: "2026-07-01"
+ 
+repository-code: "https://github.com/architexte/cours-data-processing"
+url: "https://github.com/architexte/cours-data-processing"
+ 
+publisher:
+  name: "École nationale des chartes - PSL"
+ 
+abstract: >
+  Course materials dedicated to data scraping, text processing,
+  data preprocessing, and related computational methods.
+ 
+keywords:
+  - web scraping
+  - data processing
+  - text processing
+  - natural language processing
+  - digital humanities
+  - course materials
+ 
+license: "CC-BY-4.0"
+ 
+preferred-citation:
+  type: software
+  title: "Data scraping and (pre)processing course"
+ 
+  authors:
+    - family-names: Jolivet
+      given-names: Vincent
+ 
+  contributors:
+    - family-names: Conte
+      given-names: Lilla
+ 
+    - family-names: Terriel
+      given-names: Lucas
+ 
+    - family-names: Popineau
+      given-names: Maxime
+ 
+  year: 2026
+ 
+  publisher:
+    name: "École nationale des chartes - PSL"
+ 
+  url: "https://github.com/architexte/cours-data-processing"

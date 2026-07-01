@@ -1,0 +1,53 @@
+version: 1
+ 
+project:
+  title: "Data Processing Course"
+  description: >
+    An introduction to text processing, web scraping.
+  authors:
+    - name: "Vincent Jolivet"
+      affiliations:
+        - organisation
+ 
+    - name: "Lilla Conte"
+      affiliations:
+        - organisation
+        
+    - name: "Lucas Terriel"
+      affiliations:
+        - organisation
+
+    - name: "Maxime Popineau"
+      affiliations:
+        - organisation
+
+  affiliations:
+    - id: organisation
+      name: "École nationale des chartes - PSL"
+      city: "Paris"
+      country: "France"
+      url: "https://www.chartes.psl.eu/"
+ 
+  toc:
+    - file: ./pages/index.md
+ 
+    - title: "1. Text Processing with spaCy"
+      file: notebooks/01_spacy_basics.ipynb
+ 
+    - title: "2. Basics in Web Scraping"
+      file: notebooks/02_webscraping_basics.ipynb
+ 
+    - title: "3. Use Case: Europeana APIs"
+      file: notebooks/03_europeana_scraping.ipynb
+
+    - title: "4. Use Case: Text scraping with DTS API"
+      file: notebooks/04_dts_scraping.ipynb
+
+    - title: "5. Bonus: Vibecode your scraping"
+      file: notebooks/05_vibe_coding_scraping.ipynb
+ 
+    - title: "6. Resources and Cool Tools"
+      file: ./pages/resources.md
+ 
+site:
+  template: book-theme

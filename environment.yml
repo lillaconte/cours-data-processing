@@ -9,7 +9,7 @@ dependencies:
   - matplotlib-inline=0.1.6
   - pandas=1.5.3
   - pip=23.0.1
-  - python=3.9.16
+  - python===3.10.9
   - spacy=3.5.3
   - spacy-legacy=3.0.12
   - spacy-loggers=1.0.1
@@ -17,7 +17,9 @@ dependencies:
   - spacy-model-fr_core_news_lg=3.5.0
   - spacy-model-fr_core_news_md=3.5.0
   - spacy-model-fr_core_news_sm=3.5.0
+  - jupyterlab=3.3.2 
   - pip:
-    - lyricsgenius==3.0.1
+    - lyricsgenius==3.12.2
     - spacyfishing==0.1.8
     - matplotlib==3.7.1
+    - python-dotenv==1.0.0

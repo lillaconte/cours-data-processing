@@ -6,6 +6,7 @@
 
 A practical introduction to collecting and pre-processing textual data in Python, in the context of digital humanities.
 
+
 Two notebooks:
 
 - **`notebooks/webscraping.ipynb`** — HTTP, HTML, CSV/JSON/XML, `requests`, `BeautifulSoup`, Gallica API, Genius API, DoTS-DTS scrapping, concurrent scrapping

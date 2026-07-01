@@ -11,13 +11,12 @@ Two notebooks:
 - **`notebooks/webscraping.ipynb`** — HTTP, HTML, CSV/JSON/XML, `requests`, `BeautifulSoup`, Gallica API, Genius API, DoTS-DTS scrapping, concurrent scrapping
 - **`notebooks/spacy_basics.ipynb`** — tokenization, lemmatization, named entity recognition with spaCy
 
-## API key setup
+## Genius API key setup
 
 Create a `.env` file (use the [`.dev.env`](./.dev.env) as template) at the root of the project:
 
 ```
 GENIUS_CLIENT_ACCESS_TOKEN=your_client_access_token_here
-WSKEY=your_europeana_api_key
 ```
 
 This file is ignored by git and must never be committed. See [this guide](https://melaniewalsh.github.io/Intro-Cultural-Analytics/04-Data-Collection/07-Genius-API.html#api-keys) to get your key.
@@ -57,6 +56,13 @@ uv run jupyter lab
 ```
 
 Then open the desired notebook from the `notebooks/` folder.
+
+## Build Jupyter Book
+
+```
+jupyter book start 
+jupyter book build --html
+```
 
 ## Citation
 

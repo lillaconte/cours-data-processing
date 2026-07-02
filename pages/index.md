@@ -9,14 +9,14 @@ l’extraction de données sur le Web.
  
 Ce Jupyter Book présente progressivement plusieurs méthodes permettant de :
  
-- traiter et analyser du texte avec spaCy ;
+- analyser du texte avec spaCy ;
 - comprendre les principes fondamentaux du web scraping ;
-- construire des scripts de scraping avec une approche assistée par IA ;
+- construire des scripts de scraping et utiliser des API publiques ;
 - découvrir des ressources et des outils complémentaires.
  
 ## Organisation du cours
  
-Le cours est composé de trois notebooks principaux.
+Le cours est composé de six notebooks principaux.
  
 ### 1. Text Processing with spaCy
  
@@ -37,24 +37,45 @@ Présentation des principes essentiels du web scraping :
 - extraction de données ;
 - sélection d’éléments HTML ;
 - export des résultats.
+
+### 3. Use Case: Europeana APIs
+
+Présentation de la suite d'API Europeana (Search API, Annotation API, Fulltext API) :
+
+- récupération des métadonnées descriptives d'objets patrimoniaux ;
+- exploration des collections patrimoniales (images et texte ocr).
+
+### 4. Use Case: Text scraping with DTS API
+
+Présentation de l'API DTS et du client Python ThunderDots :
+
+- récupération et l'exploration de collections textuelles ;
+- téléchargement de documents ;
+- normalisation de métadonnées.
+
+### 5. Bonus: Vibecode your scraping
+
+Présentation d'une approche de scraping assistée par IA :
+
+- utilisation de GPT/Codex à des fins méthodologiques ;
+- récupération de données à partir d'un URL ;
+- utilisation d'un SPARQL endpoint ;
+- moissonnage via un entrepôt OAI-PMH.
  
-### 3. Scraping with Vibe Coding
- 
-Construction d’un workflow de scraping assisté par des outils d’intelligence
-artificielle, tout en conservant une démarche reproductible, vérifiable et
-documentée.
- 
-Une dernière section rassemble des ressources, bibliothèques et outils utiles
+### 6. Resources and Cool Tools
+
+Cette dernière section rassemble des ressources, bibliothèques et outils utiles
 pour poursuivre l’apprentissage.
 
-```latex
-@book{cours_traitement_donnees_web_2026,
-  title        = {Traitement de données textuelles et extraction de données sur le Web},
-  author       = {Nom, Prénom and Nom, Prénom},
-  contributor  = {... and Nom, Prénom},
-  year         = {2026},
-  publisher    = {Nom de l'organisation},
-  url          = {https://github.com/organisation/nom-du-depot},
-  note         = {Jupyter Book}
+```bibtex
+@misc{jolivet2024datascrapingprocessing,
+  author       = {Jolivet, Vincent},
+  contributor  = {Conte, Lilla and Terriel, Lucas and Popineau, Maxime},
+  title        = {Data scraping and (pre)processing course},
+  year         = {2024-2026},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/architexte/cours-data-processing}},
+  institution  = {École nationale des chartes - PSL},
+  note         = {Course materials, École nationale des chartes}
 }
 ```

@@ -1,7 +1,7 @@
 version: 1
  
 project:
-  title: "Data Processing Course"
+  title: "Data Scraping Basics"
   description: >
     An introduction to text processing, web scraping.
   authors:
@@ -34,20 +34,24 @@ project:
     - title: "1. Text Processing with spaCy"
       file: notebooks/01_spacy_basics.ipynb
  
-    - title: "2. Basics in Web Scraping"
+    - title: "2. Web Scraping Basics"
       file: notebooks/02_webscraping_basics.ipynb
  
     - title: "3. Use Case: Europeana APIs"
       file: notebooks/03_europeana_scraping.ipynb
 
-    - title: "4. Use Case: Text scraping with DTS API"
+    - title: "4. Use Case: Text Scraping with DTS API"
       file: notebooks/04_dts_scraping.ipynb
 
-    - title: "5. Bonus: Vibecode your scraping"
+    - title: "5. Bonus: Vibecode your Scraping"
       file: notebooks/05_vibe_coding_scraping.ipynb
  
-    - title: "6. Resources and Cool Tools"
+    - title: "Resources and Cool Tools"
       file: ./pages/resources.md
  
 site:
   template: book-theme
+  options:
+      logo: logo-enc.png
+      style: styles.css
+      hide_authors: true

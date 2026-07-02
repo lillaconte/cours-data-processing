@@ -1,71 +1,23 @@
 ---
-title: Introduction
+title: Data Scraping Basics
 ---
  
-# Introduction
- 
-Bienvenue dans ce cours consacré au traitement de données textuelles et à
-l’extraction de données sur le Web.
- 
-Ce Jupyter Book présente progressivement plusieurs méthodes permettant de :
- 
-- analyser du texte avec spaCy ;
-- comprendre les principes fondamentaux du web scraping ;
-- construire des scripts de scraping et utiliser des API publiques ;
-- découvrir des ressources et des outils complémentaires.
- 
-## Organisation du cours
- 
-Le cours est composé de six notebooks principaux.
- 
-### 1. Text Processing with spaCy
- 
-Introduction au traitement automatique du langage avec spaCy :
- 
-- chargement d’un modèle linguistique ;
-- tokenisation ;
-- lemmatisation ;
-- analyse morphosyntaxique ;
-- reconnaissance d’entités nommées.
- 
-### 2. Basics in Web Scraping
- 
-Présentation des principes essentiels du web scraping :
- 
-- structure d’une page HTML ;
-- requêtes HTTP ;
-- extraction de données ;
-- sélection d’éléments HTML ;
-- export des résultats.
+# Data Scraping Basics
+---
 
-### 3. Use Case: Europeana APIs
+**Vincent Jolivet**<sup>1</sup>, **Lilla Conte**<sup>1</sup>, **Lucas Terriel**<sup>1</sup>, **Maxime Popineau**<sup>1</sup>
 
-Présentation de la suite d'API Europeana (Search API, Annotation API, Fulltext API) :
+<sup>1</sup> École nationale des chartes - PSL
 
-- récupération des métadonnées descriptives d'objets patrimoniaux ;
-- exploration des collections patrimoniales (images et texte ocr).
+---
 
-### 4. Use Case: Text scraping with DTS API
+This course introduces practical methods for collecting and processing textual data from the web. Through a series of hands-on examples, you will learn how to acquire, explore and prepare textual corpora using Python and publicly available APIs. The course focuses on :
 
-Présentation de l'API DTS et du client Python ThunderDots :
-
-- récupération et l'exploration de collections textuelles ;
-- téléchargement de documents ;
-- normalisation de métadonnées.
-
-### 5. Bonus: Vibecode your scraping
-
-Présentation d'une approche de scraping assistée par IA :
-
-- utilisation de GPT/Codex à des fins méthodologiques ;
-- récupération de données à partir d'un URL ;
-- utilisation d'un SPARQL endpoint ;
-- moissonnage via un entrepôt OAI-PMH.
- 
-### 6. Resources and Cool Tools
-
-Cette dernière section rassemble des ressources, bibliothèques et outils utiles
-pour poursuivre l’apprentissage.
+- the basics of **text processing with spaCy**;
+- the **fundamentals of web scraping**, including HTTP requests, HTML parsing and APIs;
+- **practical use cases** using Genius, Wikisource and Europeana;
+- examples of **AI-assisted ("vibecoding") workflows** for developing scraping methods;
+- a selection of **additional resources and tools** for web scraping.
 
 ```bibtex
 @misc{jolivet2024datascrapingprocessing,

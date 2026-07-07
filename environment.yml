@@ -3,23 +3,25 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - beautifulsoup4=4.12.2
-  - libxml2=2.10.3
-  - lxml=4.9.2
-  - matplotlib-inline=0.1.6
-  - pandas=1.5.3
-  - pip=23.0.1
-  - python===3.10.9
-  - spacy=3.5.3
+  - beautifulsoup4=4.15.0
+  - lxml=6.1.1
+  - matplotlib-inline=0.2.2
+  - pandas=3.0.3
+  - pip
+  - python=3.12
+  - spacy=3.8.14
   - spacy-legacy=3.0.12
-  - spacy-loggers=1.0.1
-  - spacy-model-en_core_web_md=3.5.0
-  - spacy-model-fr_core_news_lg=3.5.0
-  - spacy-model-fr_core_news_md=3.5.0
-  - spacy-model-fr_core_news_sm=3.5.0
-  - jupyterlab=3.3.2 
+  - spacy-loggers=1.0.5
+  - spacy-model-en_core_web_md=3.8.0
+  - spacy-model-en_core_web_sm=3.8.0
+  - spacy-model-fr_core_news_md=3.8.0
+  - spacy-model-fr_core_news_sm=3.8.0
+  - jupyterlab=4.6.0
   - pip:
     - lyricsgenius==3.12.2
     - spacyfishing==0.1.8
-    - matplotlib==3.7.1
-    - python-dotenv==1.0.0
+    - matplotlib==3.11.0
+    - python-dotenv==1.2.2
+    - httpx==0.28.1
+    - thunderdots==0.1.6
+    - fastparquet==2026.5.0

@@ -55,3 +55,5 @@ twarc.log
 ## Auth
 api_key_my.py
 /_build
+/lite_content
+.jupyterlite.doit.db

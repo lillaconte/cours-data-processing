@@ -39,6 +39,28 @@ jobs:
         run: npm install -g jupyter-book
       - name: Build HTML Assets
         run: jupyter-book build --html
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install JupyterLite
+        run: pip install jupyterlite-core==0.6.4 jupyterlite-pyodide-kernel==0.6.1 "jupyter-server>=2.19.0"
+      - name: Stage JupyterLite content
+        run: |
+          mkdir -p lite_content
+          cp -r notebooks lite_content/
+          cp -r data lite_content/
+          cp -r img lite_content/
+          cp -r src lite_content/
+      - name: Build JupyterLite
+        run: jupyter lite build --contents lite_content --output-dir _build/html/lite
+      - name: Stage spaCy wasm wheels and models (same-origin, GitHub Releases has no CORS)
+        run: |
+          mkdir -p _build/html/lite/extra-wheels
+          cp lite/wasm-wheels/*.whl _build/html/lite/extra-wheels/
+          curl -sL -o _build/html/lite/extra-wheels/en_core_web_md-3.8.0-py3-none-any.whl \
+            "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl"
+          curl -sL -o _build/html/lite/extra-wheels/fr_core_news_md-3.8.0-py3-none-any.whl \
+            "https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.8.0/fr_core_news_md-3.8.0-py3-none-any.whl"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

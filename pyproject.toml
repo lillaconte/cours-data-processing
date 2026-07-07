@@ -1,32 +1,38 @@
 [project]
 name = "cours-data-processing"
 version = "0.1.0"
-requires-python = "==3.11.*,<3.12"
+requires-python = "==3.12.*,<3.13"
 dependencies = [
-    "beautifulsoup4>=4.12.3",
-    "lxml>=4.9.2",
-    "matplotlib==3.7.1",
-    "matplotlib-inline==0.1.6",
-    "pandas==1.5.3",
-    "numpy>=1.21,<2.0",
-    "spacy==3.5.3",
+    "beautifulsoup4==4.15.0",
+    "lxml==6.1.1",
+    "matplotlib==3.11.0",
+    "matplotlib-inline==0.2.2",
+    "pandas==3.0.3",
+    "numpy==2.5.0",
+    "spacy==3.8.14",
     "spacy-legacy==3.0.12",
-    "spacy-loggers==1.0.1",
-    "jupyterlab>=4.5.7",
+    "spacy-loggers==1.0.5",
+    "jupyterlab==4.6.0",
     "spacyfishing==0.1.8",
-    "python-dotenv==1.0.0",
+    "python-dotenv==1.2.2",
     "lyricsgenius==3.12.2",
+    "fastparquet==2026.5.0",
     # spaCy models
-    "en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.5.0/en_core_web_md-3.5.0-py3-none-any.whl",
-    "fr_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.5.0/fr_core_news_sm-3.5.0-py3-none-any.whl",
-    "fr_core_news_md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.5.0/fr_core_news_md-3.5.0-py3-none-any.whl",
-    "fr_core_news_lg @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_lg-3.5.0/fr_core_news_lg-3.5.0-py3-none-any.whl",
-    "httpx>=0.28.1",
-    "thunderdots>=0.1.6",
+    "en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl",
+    "en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "fr_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.8.0/fr_core_news_sm-3.8.0-py3-none-any.whl",
+    "fr_core_news_md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.8.0/fr_core_news_md-3.8.0-py3-none-any.whl",
+    "httpx==0.28.1",
+    "thunderdots==0.1.6",
 ]
 
 [dependency-groups]
 dev = [
-    "ipykernel>=7.3.0",
-    "jupyterlab>=4.6.0",
+    "ipykernel==7.3.0",
+    "jupyterlab==4.6.0",
+]
+lite = [
+    "jupyterlite-core==0.6.4",
+    "jupyterlite-pyodide-kernel==0.6.1",
+    "jupyter-server>=2.19.0",
 ]

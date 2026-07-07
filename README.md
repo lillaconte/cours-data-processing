@@ -1,6 +1,4 @@
-# Data Scraping Basics - course
-
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+# Data Scraping Basics - course[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/architexte/cours-data-processing/main)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 
@@ -41,10 +39,18 @@ conda env create -f environment.yml
 conda activate sassari
 ```
 
+=======
+### With pyenv
+```bash
+pyenv install 3.11
+pyenv virtualenv 3.11 sassari
+pyenv activate sassari
+pip install -r requirements.txt
+```
 ## Launch JupyterLab
 
 ```bash
-# venv or conda (environment already activated)
+# venv or conda or pyenv (environment already activated)
 jupyter lab
 
 # uv
